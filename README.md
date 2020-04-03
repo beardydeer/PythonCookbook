@@ -127,6 +127,26 @@ To znaczy że zindeksowano wszystkie pliki. A wiem to stąd, że wszystkie pliki
 
 ### Jak zarchiwować moje zmiany?
 
+> Jaki dawać tytuł? (Uwaga bez polskuch znaków!)
+
+
+```
+<Co zrobiłam: dodałam, uzupełniłam, zmieniłam, usunęłam> <gdzie/co> <po co>
+```
+
+np.
+
+```
+Dodałam czasownik do bomby żeby nie wybuchała od razu.
+```
+
+albo
+
+```
+Uzupelnilam instrukcje i dodatkowe zdjecia obslugi komputera
+```
+
+
 #### Pierwszy commit
 
 ```shell
@@ -202,11 +222,31 @@ To znaczy, że mam liste archiwów:
 
 ### Podsumowanie: Jak zapisać zmiany do archiwum zdalnego?
 
+#### Podstawowe 
+
 ```shell
 git status 
 git add .
 git commit -m "Podsumowałam instrukcję jak używać git"
 git push -u origin master 
+```
+
+![](2020-04-03-16-51-02.png)
+
+![](2020-04-03-16-51-30.png)
+
+#### Bardziej przejrzyste 
+
+
+```shell
+git status 
+git add .
+git status 
+git commit -m "Zmieniłam podsumowanie używania git"
+git status
+git log
+git push -u origin master 
+git log
 ```
 
 
