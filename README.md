@@ -242,7 +242,7 @@ git push -u origin master
 git status 
 git add .
 git status 
-git commit -m "Zmieniłam podsumowanie używania git"
+git commit -m "Zmienilam podsumowanie uzywania git"
 git status
 git log
 git push -u origin master 
